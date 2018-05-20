@@ -5,28 +5,28 @@
 
     <div class="content-wrapper">
       <div class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
+        <b-container fluid>
+          <b-row class="mb-2">
+            <b-col sm="6">
               <h1 class="m-0 text-dark">**Title**</h1>
-            </div>
-            <div class="col-sm-6">
+            </b-col>
+            <b-col sm="6">
               **Breadcrumbs**
-            </div>
-          </div>
-        </div>
+            </b-col>
+          </b-row>
+        </b-container>
       </div>
 
       <section class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
+        <b-container fluid>
+          <b-row>
+            <b-col>
               <transition :duration="300" name="fade" mode="out-in">
                 <router-view />
               </transition>
-            </div>
-          </div>
-        </div>
+            </b-col>
+          </b-row>
+        </b-container>
       </section>
     </div>
   </div>
