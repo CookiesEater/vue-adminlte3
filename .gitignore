@@ -1,0 +1,15 @@
+# phpstorm project files
+.idea
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# npm
+/node_modules
+npm-debug.log*
+
+# assets
+/example/dist
