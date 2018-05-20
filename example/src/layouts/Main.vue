@@ -1,6 +1,7 @@
 <template>
   <div class="sidebar-mini sidebar-open">
     <div class="wrapper">
+      <app-header />
       <app-aside />
 
       <div class="content-wrapper">
@@ -34,10 +35,12 @@
 </template>
 
 <script>
+import AppHeader from '@/components/AppHeader.vue';
 import AppAside from '@/components/AppAside.vue';
 
 export default {
   components: {
+    AppHeader,
     AppAside,
   },
 };
