@@ -1,5 +1,5 @@
 <template>
-  <a-lte-aside>
+  <a-lte-aside mini>
     <a-lte-aside-brand :logo="logo" header="AdminLTE 3" />
 
     <a-lte-aside-container>

@@ -18,6 +18,22 @@ export default {
       type: String,
       default: 'primary',
     },
+    mini: {
+      type: Boolean,
+      default: false,
+    },
+    collapse: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  created() {
+    if (this.mini) {
+      document.body.classList.add('sidebar-mini');
+    }
+    if (this.collapse) {
+      document.body.classList.add('sidebar-collapse');
+    }
   },
 };
 </script>
