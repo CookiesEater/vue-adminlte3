@@ -27,3 +27,11 @@ export default {
   },
 };
 </script>
+
+<style>
+/* AdminLTE template need min 1rem padding for better views */
+.main-header.navbar-expand .navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+</style>
