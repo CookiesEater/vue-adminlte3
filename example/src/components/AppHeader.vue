@@ -1,7 +1,7 @@
 <template>
   <a-lte-navbar border-bottom>
     <b-navbar-nav>
-      <b-nav-item>
+      <b-nav-item v-a-lte-aside-toggle>
         <font-awesome-icon icon="bars" />
       </b-nav-item>
       <b-nav-item to="/" class="d-none d-sm-inline-block">Home</b-nav-item>

@@ -33,6 +33,8 @@ export default {
     }
     if (this.collapse) {
       document.body.classList.add('sidebar-collapse');
+    } else {
+      document.body.classList.add('sidebar-open');
     }
   },
 };

@@ -5,6 +5,7 @@ import aLteAsideNav from './aLteAsideNav.vue';
 import aLteAsideNavItem from './aLteAsideNavItem.vue';
 import aLteAsideNavItemDropdown from './aLteAsideNavItemDropdown.vue';
 import aLteAsideUser from './aLteAsideUser.vue';
+import directives from './directives';
 
 const components = {
   aLteAside,
@@ -20,6 +21,10 @@ const VuePlugin = {
   install(Vue) {
     Object.keys(components).forEach((component) => {
       Vue.component(component, components[component]);
+    });
+
+    Object.keys(directives).forEach((directive) => {
+      Vue.directive(directive, directives[directive]);
     });
   },
 };
