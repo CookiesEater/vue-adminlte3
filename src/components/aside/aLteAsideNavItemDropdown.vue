@@ -57,7 +57,11 @@ export default {
     // It's not so good, but I don't know best way to detect active submenu :(
     this.activeByItem = this.$refs.dropdown.querySelectorAll('a.active').length !== 0;
     const observer = new MutationObserver((mutations) => {
-      this.activeByItem = mutations.find(el => el.target.classList.contains('active')) !== undefined;
+      const filtered = mutations.filter(el => el.target.parentNode.parentNode === this.$refs.dropdown);
+      if (filtered.length === 0) {
+        return;
+      }
+      this.activeByItem = filtered.find(el => el.target.classList.contains('active')) !== undefined;
     });
     observer.observe(this.$refs.dropdown, { attributes: true, subtree: true, attributeFilter: ['class'] });
   },
