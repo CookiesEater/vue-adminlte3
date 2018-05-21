@@ -7,7 +7,7 @@
       <b-container slot="header" fluid>
         <b-row class="mb-2">
           <b-col sm="6">
-            <h1 class="m-0 text-dark">**Title**</h1>
+            <h1 class="m-0 text-dark">{{ title }}</h1>
           </b-col>
           <b-col sm="6">
             **Breadcrumbs**
@@ -40,6 +40,18 @@ export default {
     AppHeader,
     AppFooter,
     AppAside,
+  },
+  computed: {
+    title() {
+      let title = '';
+      if (this.$route.meta && this.$route.meta.label) {
+        title = this.$route.meta.label;
+      }
+      if (this.$route.name) {
+        title = this.$route.name;
+      }
+      return title;
+    },
   },
 };
 </script>
