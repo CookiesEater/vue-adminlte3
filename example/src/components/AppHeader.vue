@@ -1,6 +1,6 @@
 <template>
   <a-lte-header border-bottom>
-    <b-navbar type="light" variant="white" toggleable>
+    <b-navbar type="light" variant="white" class="navbar-expand">
       <b-navbar-nav>
         <b-nav-item v-a-lte-aside-toggle>
           <font-awesome-icon icon="bars" />
