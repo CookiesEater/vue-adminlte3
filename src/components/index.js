@@ -1,7 +1,7 @@
 import Aside from './aside';
-import Navbar from './navbar';
+import Layout from './layout';
 
 export default {
   Aside,
-  Navbar,
+  Layout,
 };
