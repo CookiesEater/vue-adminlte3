@@ -7,6 +7,7 @@ import WidgetsPage from '@/pages/WidgetsPage.vue';
 import UiGeneralPage from '@/pages/ui/UiGeneralPage.vue';
 import UiIconsPage from '@/pages/ui/UiIconsPage.vue';
 import UiButtonsPage from '@/pages/ui/UiButtonsPage.vue';
+import LoginPage from '@/pages/pages/LoginPage.vue';
 import NotFoundPage from '@/pages/NotFoundPage.vue';
 
 Vue.use(VueRouter);
@@ -55,6 +56,7 @@ const routes = [
       },
     ],
   },
+  { path: '/pages/login', component: LoginPage },
   { path: '*', redirect: '/404' },
 ];
 

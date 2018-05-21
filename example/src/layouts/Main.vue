@@ -1,5 +1,5 @@
 <template>
-  <a-lte-page>
+  <a-lte-layout-page>
     <app-header />
     <app-aside />
 
@@ -27,7 +27,7 @@
     </a-lte-content>
 
     <app-footer />
-  </a-lte-page>
+  </a-lte-layout-page>
 </template>
 
 <script>

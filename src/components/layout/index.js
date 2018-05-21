@@ -1,13 +1,15 @@
 import aLteContent from './aLteContent.vue';
 import aLteFooter from './aLteFooter.vue';
 import aLteHeader from './aLteHeader.vue';
-import aLtePage from './aLtePage.vue';
+import aLteLayoutPage from './aLteLayoutPage.vue';
+import aLteLayoutLogin from './aLteLayoutLogin.vue';
 
 const components = {
   aLteContent,
   aLteFooter,
   aLteHeader,
-  aLtePage,
+  aLteLayoutPage,
+  aLteLayoutLogin,
 };
 
 const VuePlugin = {
