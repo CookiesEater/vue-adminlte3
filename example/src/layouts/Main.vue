@@ -60,10 +60,9 @@ export default {
 </script>
 
 <style>
-.breadcrumbs-enter,
-.breadcrumbs-leave {
+.breadcrumb-item {
+  transition: all 0.3s;
   white-space: nowrap;
-  transition: opacity 0.3s;
 }
 .breadcrumbs-enter,
 .breadcrumbs-leave-to {
