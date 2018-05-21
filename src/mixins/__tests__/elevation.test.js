@@ -40,5 +40,19 @@ describe('elevation', () => {
       elevation: 4,
     });
     expect(wrapper.vm.$el.className).toBe('elevation-4');
+    wrapper.setProps({
+      elevation: 0,
+    });
+    expect(wrapper.vm.$el.className.indexOf('elevation') === -1).toBeTruthy();
+  });
+
+  it('elevation not apply if set to 0', () => {
+    const wrapper = createWrapper({
+      propsData: {
+        elevation: 0,
+      },
+    });
+
+    expect(wrapper.vm.$el.className.indexOf('elevation') === -1).toBeTruthy();
   });
 });

@@ -7,7 +7,7 @@ export default (def = 2) => ({
   },
   computed: {
     elevationClass() {
-      return `elevation-${this.elevation}`;
+      return this.elevation ? `elevation-${this.elevation}` : '';
     },
   },
 });
