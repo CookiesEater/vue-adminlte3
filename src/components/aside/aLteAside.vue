@@ -8,7 +8,7 @@
 import elevation from '../../mixins/elevation';
 
 export default {
-  mixins: [elevation],
+  mixins: [elevation()],
   props: {
     type: {
       type: String,

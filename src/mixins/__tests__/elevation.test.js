@@ -2,7 +2,7 @@ import { shallowMount, createLocalVue } from '@vue/test-utils';
 import elevation from '../elevation';
 
 const Test = {
-  mixins: [elevation],
+  mixins: [elevation()],
   render(createElement) {
     return createElement('div', { class: [this.elevationClass] });
   },
@@ -14,6 +14,23 @@ describe('elevation', () => {
       localVue: createLocalVue(),
       ...options,
     });
+
+  it('elevation is a function', () => {
+    expect(typeof elevation === 'function').toBeTruthy();
+  });
+
+  it('elevation has prop default value', () => {
+    const mixin = elevation();
+
+    expect(mixin.props.elevation).toBeDefined();
+    expect(mixin.props.elevation.default).toBe(2);
+  });
+
+  it('elevation has computed method', () => {
+    const mixin = elevation();
+
+    expect(typeof mixin.computed.elevationClass === 'function').toBeDefined();
+  });
 
   it('has elevation', () => {
     const wrapper = createWrapper();

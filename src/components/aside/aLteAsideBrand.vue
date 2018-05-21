@@ -9,7 +9,7 @@
 import elevation from '../../mixins/elevation';
 
 export default {
-  mixins: [elevation],
+  mixins: [elevation()],
   props: {
     logo: {
       type: String,

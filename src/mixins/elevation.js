@@ -1,8 +1,8 @@
-export default {
+export default (def = 2) => ({
   props: {
     elevation: {
       type: Number,
-      default: 2,
+      default: def,
     },
   },
   computed: {
@@ -10,4 +10,4 @@ export default {
       return `elevation-${this.elevation}`;
     },
   },
-};
+});
