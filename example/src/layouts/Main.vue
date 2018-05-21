@@ -9,8 +9,8 @@
           <b-col sm="6">
             <h1 class="m-0 text-dark">{{ title }}</h1>
           </b-col>
-          <b-col sm="6">
-            **Breadcrumbs**
+          <b-col sm="6" class="d-flex justify-content-end">
+            <a-lte-breadcrumbs :list="breadcrumbs" transition="breadcrumbs" />
           </b-col>
         </b-row>
       </b-container>
@@ -52,6 +52,24 @@ export default {
       }
       return title;
     },
+    breadcrumbs() {
+      return this.$route.matched;
+    },
   },
 };
 </script>
+
+<style>
+.breadcrumbs-enter,
+.breadcrumbs-leave {
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+.breadcrumbs-enter,
+.breadcrumbs-leave-to {
+  opacity: 0;
+}
+.breadcrumbs-leave-active {
+  position: absolute;
+}
+</style>
