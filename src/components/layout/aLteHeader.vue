@@ -1,7 +1,7 @@
 <template functional>
-  <div v-bind="data.attrs" :class="{ 'main-header': true, 'border-bottom': props.borderBottom }" v-on="listeners">
+  <header v-bind="data.attrs" :class="{ 'main-header': true, 'border-bottom': props.borderBottom }" v-on="listeners">
     <slot />
-  </div>
+  </header>
 </template>
 
 <script>
