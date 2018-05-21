@@ -18,7 +18,7 @@
       <b-container fluid>
         <b-row>
           <b-col>
-            <transition :duration="300" name="fade" mode="out-in">
+            <transition name="fade" mode="out-in">
               <router-view />
             </transition>
           </b-col>
