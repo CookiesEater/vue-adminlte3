@@ -79,5 +79,41 @@
         </a-lte-info-box>
       </b-col>
     </b-row>
+
+    <h5>Small Box</h5>
+    <b-row class="mb-4">
+      <b-col>
+        <a-lte-small-box variant="info" icon="shopping-cart" to="#">
+          <h3>150</h3>
+          <p>New orders</p>
+          <template slot="footer">
+            More info
+            <font-awesome-icon icon="arrow-alt-circle-right" />
+          </template>
+        </a-lte-small-box>
+      </b-col>
+      <b-col>
+        <a-lte-small-box variant="success" icon="chart-bar" footer="It's not a link">
+          <h3>53<sup>%</sup></h3>
+          <p>Bounce Rate</p>
+        </a-lte-small-box>
+      </b-col>
+      <b-col>
+        <a-lte-small-box variant="warning" icon="user-plus" to="#">
+          <h3>44</h3>
+          <p>User Registrations</p>
+          <template slot="footer">
+            More info
+            <font-awesome-icon icon="arrow-alt-circle-right" />
+          </template>
+        </a-lte-small-box>
+      </b-col>
+      <b-col>
+        <a-lte-small-box variant="danger" icon="chart-pie" to="#" footer="More info">
+          <h3>65</h3>
+          <p>Unique Visitors</p>
+        </a-lte-small-box>
+      </b-col>
+    </b-row>
   </div>
 </template>
