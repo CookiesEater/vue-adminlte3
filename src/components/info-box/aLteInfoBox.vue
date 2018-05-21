@@ -1,5 +1,5 @@
 <template>
-  <div :class="['info-box', bgClass, elevationClass]">
+  <div :class="['info-box', bgClass]">
     <div :class="['info-box-icon', bgIconClass]">
       <a-lte-icon :icon="icon" />
     </div>
