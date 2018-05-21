@@ -17,7 +17,7 @@
     </b-row>
 
     <h5>Info Box With <code>&lt;a-lte-info-box variant="*"&gt;</code></h5>
-    <b-row>
+    <b-row class="mb-4">
       <b-col>
         <a-lte-info-box icon="bookmark" header="Bookmarks" variant="info">
           41,410
@@ -49,7 +49,7 @@
     </b-row>
 
     <h5>Info Box WIth <code>&lt;a-lte-info-box variant="*" gradient&gt;</code></h5>
-    <b-row>
+    <b-row class="mb-4">
       <b-col>
         <a-lte-info-box icon="bookmark" header="Bookmarks" variant="info" gradient>
           41,410
