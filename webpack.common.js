@@ -10,7 +10,7 @@ module.exports = {
   entry: ['babel-polyfill', resolve('example/src/main.js')],
   output: {
     path: resolve('docs/dist/'),
-    publicPath: '/dist/',
+    publicPath: 'dist/',
     filename: 'js/build.js',
   },
   module: {
