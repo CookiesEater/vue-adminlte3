@@ -29,7 +29,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "@fortawesome/vue-fontawesome": "0.0.22",
     "@vue/test-utils": "^1.0.0-beta.16",
-    "admin-lte": "^3.0.0-alpha.2",
+    "admin-lte": "^3.0.0-alpha",
     "babel-core": "^6.26.3",
     "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.4",
@@ -62,7 +62,7 @@
     "webpack-merge": "^4.1.2"
   },
   "peerDependencies": {
-    "admin-lte": "^3.0.0-alpha.2",
+    "admin-lte": "^3.0.0-alpha",
     "@fortawesome/vue-fontawesome": "^0.0.22"
   }
 }
