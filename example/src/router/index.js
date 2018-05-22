@@ -62,6 +62,6 @@ const routes = [
 ];
 
 export default new VueRouter({
-  mode: 'history',
+  mode: 'hash', // Use this app in github pages, so we need this
   routes,
 });
