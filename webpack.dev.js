@@ -19,7 +19,7 @@ module.exports = merge(common, {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
-    contentBase: path.join(__dirname, 'example'),
+    contentBase: path.join(__dirname, 'docs'),
   },
   devtool: '#eval-source-map',
 });

@@ -9,7 +9,7 @@ function resolve(dir) {
 module.exports = {
   entry: ['babel-polyfill', resolve('example/src/main.js')],
   output: {
-    path: resolve('example/dist/'),
+    path: resolve('docs/dist/'),
     publicPath: '/dist/',
     filename: 'js/build.js',
   },
