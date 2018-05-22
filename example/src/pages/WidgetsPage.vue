@@ -115,5 +115,73 @@
         </a-lte-small-box>
       </b-col>
     </b-row>
+
+    <h5>Cards</h5>
+    <b-row class="mb-4">
+      <b-col>
+        <b-card no-body>
+          <b-card-header>
+            <a-lte-card-title>Expandable</a-lte-card-title>
+            <a-lte-card-tools>
+              <b-button v-b-toggle.card-1 variant="tool" type="button">
+                <font-awesome-icon icon="plus" />
+              </b-button>
+            </a-lte-card-tools>
+          </b-card-header>
+          <b-collapse id="card-1">
+            <b-card-body>
+              The body of the card
+            </b-card-body>
+          </b-collapse>
+        </b-card>
+      </b-col>
+      <b-col>
+        <b-collapse id="card-2" visible>
+          <b-card no-body>
+            <b-card-header header-bg-variant="success">
+              <a-lte-card-title>Removable</a-lte-card-title>
+              <a-lte-card-tools>
+                <b-button v-b-toggle.card-2 variant="tool" type="button">
+                  <font-awesome-icon icon="times" />
+                </b-button>
+              </a-lte-card-tools>
+            </b-card-header>
+            <b-card-body>
+              The body of the card
+            </b-card-body>
+          </b-card>
+        </b-collapse>
+      </b-col>
+      <b-col>
+        <b-card no-body>
+          <b-card-header header-bg-variant="warning">
+            <a-lte-card-title>Expandable</a-lte-card-title>
+            <a-lte-card-tools>
+              <b-button v-b-toggle.card-3 variant="tool" type="button">
+                <font-awesome-icon icon="minus" />
+              </b-button>
+            </a-lte-card-tools>
+          </b-card-header>
+          <b-collapse id="card-3">
+            <b-card-body>
+              The body of the card
+            </b-card-body>
+          </b-collapse>
+        </b-card>
+      </b-col>
+      <b-col>
+        <b-card no-body>
+          <b-card-header header-bg-variant="danger">
+            <a-lte-card-title>Loading state</a-lte-card-title>
+          </b-card-header>
+          <b-card-body>
+            The body of the card
+          </b-card-body>
+          <a-lte-card-overlay>
+            <font-awesome-icon icon="sync-alt" size="2x" spin />
+          </a-lte-card-overlay>
+        </b-card>
+      </b-col>
+    </b-row>
   </div>
 </template>
