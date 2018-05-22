@@ -69,6 +69,10 @@ export default {
               title: 'Login',
               to: '/pages/login',
             },
+            {
+              title: 'Error 404',
+              to: '/404',
+            },
           ],
         },
       ],
